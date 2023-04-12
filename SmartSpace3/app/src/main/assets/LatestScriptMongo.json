@@ -1,0 +1,737 @@
+[
+    {
+    "user_id": 1001,
+    "room": 
+    [ 
+        {
+            "room_id": 1,
+            "room_name": "Kitchen",
+            "device": 
+            [
+                {
+                    "device_id": 1,
+                    "device_name": "Shelly Smart Plug-1",
+                    "status": "Off",
+                    "ip":"10.0.0.2",
+                    "settings": {
+                        "id": 1, 
+                        "src": "shellyplugus-c049ef8bd914",
+                        "result": 
+                            {"id": 0,
+                            "source": "HTTP",
+                            "output": "True",
+                            "apower": 23.2,
+                            "voltage": 121.8,
+                            "current": 0.228,
+                            "aenergy": 
+                                {"total": 426.854,
+                                "by_minute": [245.256, 384.364, 375.639],
+                                "minute_ts": 1679467357
+                                },
+                            "temperature": 
+                                {
+                                    "tC": 47.6,
+                                    "tF": 117.7
+                                }
+                            }
+                    }
+                }
+            ]
+        },
+        {
+            "room_id": 2,
+            "room_name": "Laundry",
+            "device": [
+            {
+                "device_id": 2,
+                "device_name": "Shelly Smart Plug-2",
+                "status": "Off",
+                "ip":"10.0.0.2",
+                "settings": {
+                    "id": 2, 
+                    "src": "shellyplugus-c049ef8bd914",
+                    "result": 
+                        {"id": 0,
+                        "source": "HTTP",
+                        "output": "True",
+                        "apower": 23.2,
+                        "voltage": 121.8,
+                        "current": 0.228,
+                        "aenergy": 
+                            {"total": 426.854,
+                            "by_minute": [245.256, 384.364, 375.639],
+                            "minute_ts": 1679467357
+                            },
+                        "temperature": 
+                            {
+                                "tC": 47.6,
+                                "tF": 117.7
+                            }
+                        }
+                }
+            }]
+        },
+        {
+            "room_id": 3,
+            "room_name": "Bedroom-1",
+            "device": 
+            [{
+                "device_id": 3,
+                "device_name": "Hue Light-1",
+                "status": "Off",
+                "ip":"10.0.0.3",
+                "settings": [
+                    {
+                        "On": "False",
+                        "Brightness": 254,
+                        "Hue": 41435,
+                        "Saturation": 77,
+                        "XY color": [0.3129, 0.3291],
+                        "Alert": "select",
+                        "Effect": "none",
+                        "Reachable": "True",
+                        "Color mode": "xy",
+                        "Name": "Level 1",
+                        "Type": "Extended color light"
+                    }
+                ]
+            }]
+        },
+        {
+            "room_id": 4,
+            "room_name": "Bathroom",
+            "device": 
+            [{
+                "device_id": 4,
+                "device_name": "Hue Light-2",
+                "status": "Off",
+                "ip":"10.0.0.3",
+                "settings": [
+                    {
+                        "On": "False",
+                        "Brightness": 254,
+                        "Hue": 41435,
+                        "Saturation": 77,
+                        "XY color": [0.3129, 0.3291],
+                        "Alert": "select",
+                        "Effect": "none",
+                        "Reachable": "True",
+                        "Color mode": "xy",
+                        "Name": "Level 2",
+                        "Type": "Extended color light"
+                    }
+                ]
+            }]
+        }
+    ]
+  },
+  {
+    "user_id": 1002,
+    "room": 
+    [ 
+        {
+            "room_id": 1,
+            "room_name": "Kitchen",
+            "device": 
+            [
+                {
+                    "device_id": 1,
+                    "device_name": "Shelly Smart Plug-1",
+                    "status": "Off",
+                    "ip":"10.0.0.2",
+                    "settings": {
+                        "id": 1, 
+                        "src": "shellyplugus-c049ef8bd914",
+                        "result": 
+                            {"id": 0,
+                            "source": "HTTP",
+                            "output": "True",
+                            "apower": 23.2,
+                            "voltage": 121.8,
+                            "current": 0.228,
+                            "aenergy": 
+                                {"total": 426.854,
+                                "by_minute": [245.256, 384.364, 375.639],
+                                "minute_ts": 1679467357
+                                },
+                            "temperature": 
+                                {
+                                    "tC": 47.6,
+                                    "tF": 117.7
+                                }
+                            }
+                    }
+                }
+            ]
+        },
+        {
+            "room_id": 2,
+            "room_name": "Laundry",
+            "device": [
+            {
+                "device_id": 2,
+                "device_name": "Shelly Smart Plug-2",
+                "status": "Off",
+                "ip":"10.0.0.2",
+                "settings": {
+                    "id": 2, 
+                    "src": "shellyplugus-c049ef8bd914",
+                    "result": 
+                        {"id": 0,
+                        "source": "HTTP",
+                        "output": "True",
+                        "apower": 23.2,
+                        "voltage": 121.8,
+                        "current": 0.228,
+                        "aenergy": 
+                            {"total": 426.854,
+                            "by_minute": [245.256, 384.364, 375.639],
+                            "minute_ts": 1679467357
+                            },
+                        "temperature": 
+                            {
+                                "tC": 47.6,
+                                "tF": 117.7
+                            }
+                        }
+                }
+            }]
+        },
+        {
+            "room_id": 3,
+            "room_name": "Bedroom-1",
+            "device": [
+            {
+                "device_id": 3,
+                "device_name": "Hue Light-1",
+                "status": "Off",
+                "ip":"10.0.0.3",
+                "settings": [
+                    {
+                        "On": "False",
+                        "Brightness": 254,
+                        "Hue": 41435,
+                        "Saturation": 77,
+                        "XY color": [0.3129, 0.3291],
+                        "Alert": "select",
+                        "Effect": "none",
+                        "Reachable": "True",
+                        "Color mode": "xy",
+                        "Name": "Level 1",
+                        "Type": "Extended color light"
+                    }
+                ]
+            }]
+        },
+        {
+            "room_id": 4,
+            "room_name": "Bathroom",
+            "device": 
+            [{
+                "device_id": 4,
+                "device_name": "Hue Light-2",
+                "status": "Off",
+                "ip":"10.0.0.3",
+                "settings": [
+                    {
+                        "On": "False",
+                        "Brightness": 254,
+                        "Hue": 41435,
+                        "Saturation": 77,
+                        "XY color": [0.3129, 0.3291],
+                        "Alert": "select",
+                        "Effect": "none",
+                        "Reachable": "True",
+                        "Color mode": "xy",
+                        "Name": "Level 2",
+                        "Type": "Extended color light"
+                    }
+                ]
+            }]
+        }
+    ]
+  },
+  
+  {
+    "user_id": 1003,
+    "room": 
+    [ 
+        {
+            "room_id": 1,
+            "room_name": "Kitchen",
+            "device": 
+            [
+                {
+                    "device_id": 1,
+                    "device_name": "Shelly Smart Plug-1",
+                    "status": "Off",
+                    "ip":"10.0.0.2",
+                    "settings": {
+                        "id": 1, 
+                        "src": "shellyplugus-c049ef8bd914",
+                        "result": 
+                            {"id": 0,
+                            "source": "HTTP",
+                            "output": "True",
+                            "apower": 23.2,
+                            "voltage": 121.8,
+                            "current": 0.228,
+                            "aenergy": 
+                                {"total": 426.854,
+                                "by_minute": [245.256, 384.364, 375.639],
+                                "minute_ts": 1679467357
+                                },
+                            "temperature": 
+                                {
+                                    "tC": 47.6,
+                                    "tF": 117.7
+                                }
+                            }
+                    }
+                }
+            ]
+        },
+        {
+            "room_id": 2,
+            "room_name": "Laundry",
+            "device": [
+            {
+                "device_id": 2,
+                "device_name": "Shelly Smart Plug-2",
+                "status": "Off",
+                "ip":"10.0.0.2",
+                "settings": {
+                    "id": 2, 
+                    "src": "shellyplugus-c049ef8bd914",
+                    "result": 
+                        {"id": 0,
+                        "source": "HTTP",
+                        "output": "True",
+                        "apower": 23.2,
+                        "voltage": 121.8,
+                        "current": 0.228,
+                        "aenergy": 
+                            {"total": 426.854,
+                            "by_minute": [245.256, 384.364, 375.639],
+                            "minute_ts": 1679467357
+                            },
+                        "temperature": 
+                            {
+                                "tC": 47.6,
+                                "tF": 117.7
+                            }
+                        }
+                }
+            }]
+        },
+        {
+            "room_id": 5,
+            "room_name": "Bedroom-2",
+            "device": 
+            [
+                {
+                    "device_id": 5,
+                    "device_name": "Hue Light-1",
+                    "status": "Off",
+                    "ip":"10.0.0.3",
+                    "settings": [
+                        {
+                            "On": "False",
+                            "Brightness": 254,
+                            "Hue": 41435,
+                            "Saturation": 77,
+                            "XY color": [0.3129, 0.3291],
+                            "Alert": "select",
+                            "Effect": "none",
+                            "Reachable": "True",
+                            "Color mode": "xy",
+                            "Name": "Level 1",
+                            "Type": "Extended color light"
+                        }
+                    ]
+                },
+                {
+                    "device_id": 6,
+                    "device_name": "Yeelight Bulb",
+                    "status": "On",
+                    "settings": [
+                                    {
+                                        "power": "on",
+                                        "bright": 50,
+                                        "ct": 4000,
+                                        "rgb": 16711680,
+                                        "hue": 0,
+                                        "sat": 100,
+                                        "color_mode": 1,
+                                        "flowing": 0,
+                                        "delayoff": 0,
+                                        "music_on": 0,
+                                        "current_brightness": 50,
+                                        "rgbv": [255,0,0],
+                                        "sleep_timer": 1,
+                                        "scene":"romantic"
+                                    }
+                                 ]
+                }
+        ]
+        },
+        {
+            "room_id": 4,
+            "room_name": "Bathroom",
+            "device": [
+            {
+                "device_id": 4,
+                "device_name": "Hue Light-2",
+                "status": "Off",
+                "ip":"10.0.0.3",
+                "settings": [
+                    {
+                        "On": "False",
+                        "Brightness": 254,
+                        "Hue": 41435,
+                        "Saturation": 77,
+                        "XY color": [0.3129, 0.3291],
+                        "Alert": "select",
+                        "Effect": "none",
+                        "Reachable": "True",
+                        "Color mode": "xy",
+                        "Name": "Level 2",
+                        "Type": "Extended color light"
+                    }
+                ]
+            }]
+        }
+    ]
+  }, 
+  {
+    "user_id": 1004,
+    "room":
+        [ 
+            {
+                "room_id": 1,
+                "room_name": "Kitchen",
+                "device": 
+                [
+                    {
+                        "device_id": 1,
+                        "device_name": "Shelly Smart Plug-1",
+                        "status": "Off",
+                        "ip":"10.0.0.2",
+                        "settings": {
+                            "id": 1, 
+                            "src": "shellyplugus-c049ef8bd914",
+                            "result": 
+                                {"id": 0,
+                                "source": "HTTP",
+                                "output": "True",
+                                "apower": 23.2,
+                                "voltage": 121.8,
+                                "current": 0.228,
+                                "aenergy": 
+                                    {"total": 426.854,
+                                    "by_minute": [245.256, 384.364, 375.639],
+                                    "minute_ts": 1679467357
+                                    },
+                                "temperature": 
+                                    {
+                                        "tC": 47.6,
+                                        "tF": 117.7
+                                    }
+                                }
+                        }
+                    }
+                ]
+            },
+            {
+                "room_id": 2,
+                "room_name": "Laundry",
+                "device": [
+                {
+                    "device_id": 2,
+                    "device_name": "Shelly Smart Plug-2",
+                    "status": "Off",
+                    "ip":"10.0.0.2",
+                    "settings": {
+                        "id": 2, 
+                        "src": "shellyplugus-c049ef8bd914",
+                        "result": 
+                            {"id": 0,
+                            "source": "HTTP",
+                            "output": "True",
+                            "apower": 23.2,
+                            "voltage": 121.8,
+                            "current": 0.228,
+                            "aenergy": 
+                                {"total": 426.854,
+                                "by_minute": [245.256, 384.364, 375.639],
+                                "minute_ts": 1679467357
+                                },
+                            "temperature": 
+                                {
+                                    "tC": 47.6,
+                                    "tF": 117.7
+                                }
+                            }
+                    }
+                }]
+            },
+            {
+                "room_id": 5,
+                "room_name": "Bedroom-2",
+                "device": 
+                [
+                    {
+                        "device_id": 5,
+                        "device_name": "Hue Light-1",
+                        "status": "Off",
+                        "ip":"10.0.0.3",
+                        "settings": [
+                            {
+                                "On": "False",
+                                "Brightness": 254,
+                                "Hue": 41435,
+                                "Saturation": 77,
+                                "XY color": [0.3129, 0.3291],
+                                "Alert": "select",
+                                "Effect": "none",
+                                "Reachable": "True",
+                                "Color mode": "xy",
+                                "Name": "Level 1",
+                                "Type": "Extended color light"
+                            }
+                        ]
+                    },
+                    {
+                        "device_id": 6,
+                        "device_name": "Yeelight Bulb",
+                        "status": "On",
+                        "settings": [
+                                        {
+                                            "power": "on",
+                                            "bright": 50,
+                                            "ct": 4000,
+                                            "rgb": 16711680,
+                                            "hue": 0,
+                                            "sat": 100,
+                                            "color_mode": 1,
+                                            "flowing": 0,
+                                            "delayoff": 0,
+                                            "music_on": 0,
+                                            "current_brightness": 50,
+                                            "rgbv": [255,0,0],
+                                            "sleep_timer": 1,
+                                            "scene":"romantic"
+                                        }
+                                     ]
+                    }
+            ]
+            },
+            {
+                "room_id": 4,
+                "room_name": "Bathroom",
+                "device": [
+                {
+                    "device_id": 4,
+                    "device_name": "Hue Light-2",
+                    "status": "Off",
+                    "ip":"10.0.0.3",
+                    "settings": [
+                        {
+                            "On": "False",
+                            "Brightness": 254,
+                            "Hue": 41435,
+                            "Saturation": 77,
+                            "XY color": [0.3129, 0.3291],
+                            "Alert": "select",
+                            "Effect": "none",
+                            "Reachable": "True",
+                            "Color mode": "xy",
+                            "Name": "Level 2",
+                            "Type": "Extended color light"
+                        }
+                    ]
+                }]
+            }
+        ]
+    },
+    {
+        "user_id": 1005,
+        "room": 
+        [ 
+            {
+                "room_id": 1,
+                "room_name": "Kitchen",
+                "device": 
+                [
+                    {
+                        "device_id": 1,
+                        "device_name": "Shelly Smart Plug-1",
+                        "status": "Off",
+                        "ip":"10.0.0.2",
+                        "settings": {
+                            "id": 1, 
+                            "src": "shellyplugus-c049ef8bd914",
+                            "result": 
+                                {"id": 0,
+                                "source": "HTTP",
+                                "output": "True",
+                                "apower": 23.2,
+                                "voltage": 121.8,
+                                "current": 0.228,
+                                "aenergy": 
+                                    {"total": 426.854,
+                                    "by_minute": [245.256, 384.364, 375.639],
+                                    "minute_ts": 1679467357
+                                    },
+                                "temperature": 
+                                    {
+                                        "tC": 47.6,
+                                        "tF": 117.7
+                                    }
+                                }
+                        }
+                    }
+                ]
+            },
+            {
+                "room_id": 2,
+                "room_name": "Laundry",
+                "device": [
+                {
+                    "device_id": 2,
+                    "device_name": "Shelly Smart Plug-2",
+                    "status": "Off",
+                    "ip":"10.0.0.2",
+                    "settings": {
+                        "id": 2, 
+                        "src": "shellyplugus-c049ef8bd914",
+                        "result": 
+                            {"id": 0,
+                            "source": "HTTP",
+                            "output": "True",
+                            "apower": 23.2,
+                            "voltage": 121.8,
+                            "current": 0.228,
+                            "aenergy": 
+                                {"total": 426.854,
+                                "by_minute": [245.256, 384.364, 375.639],
+                                "minute_ts": 1679467357
+                                },
+                            "temperature": 
+                                {
+                                    "tC": 47.6,
+                                    "tF": 117.7
+                                }
+                            }
+                    }
+                }]
+            },
+            {
+                "room_id": 3,
+                "room_name": "Bedroom-1",
+                "device": [
+                {
+                    "device_id": 3,
+                    "device_name": "Hue Light-1",
+                    "status": "Off",
+                    "ip":"10.0.0.3",
+                    "settings": [
+                        {
+                            "On": "False",
+                            "Brightness": 254,
+                            "Hue": 41435,
+                            "Saturation": 77,
+                            "XY color": [0.3129, 0.3291],
+                            "Alert": "select",
+                            "Effect": "none",
+                            "Reachable": "True",
+                            "Color mode": "xy",
+                            "Name": "Level 1",
+                            "Type": "Extended color light"
+                        }
+                    ]
+                }]
+            },
+            {
+                "room_id": 4,
+                "room_name": "Bathroom",
+                "device": [
+                {
+                    "device_id": 4,
+                    "device_name": "Hue Light-2",
+                    "status": "Off",
+                    "ip":"10.0.0.3",
+                    "settings": [
+                        {
+                            "On": "False",
+                            "Brightness": 254,
+                            "Hue": 41435,
+                            "Saturation": 77,
+                            "XY color": [0.3129, 0.3291],
+                            "Alert": "select",
+                            "Effect": "none",
+                            "Reachable": "True",
+                            "Color mode": "xy",
+                            "Name": "Level 2",
+                            "Type": "Extended color light"
+                        }
+                    ]
+                }]
+            },
+            {
+                "room_id": 5,
+                "room_name": "Bedroom-2",
+                "device": 
+                [
+                    {
+                        "device_id": 5,
+                        "device_name": "Hue Light-1",
+                        "status": "Off",
+                        "ip":"10.0.0.3",
+                        "settings": [
+                            {
+                                "On": "False",
+                                "Brightness": 254,
+                                "Hue": 41435,
+                                "Saturation": 77,
+                                "XY color": [0.3129, 0.3291],
+                                "Alert": "select",
+                                "Effect": "none",
+                                "Reachable": "True",
+                                "Color mode": "xy",
+                                "Name": "Level 1",
+                                "Type": "Extended color light"
+                            }
+                        ]
+                    },
+                    {
+                        "device_id": 6,
+                        "device_name": "Yeelight Bulb",
+                        "status": "On",
+                        "settings": [
+                                        {
+                                            "power": "on",
+                                            "bright": 50,
+                                            "ct": 4000,
+                                            "rgb": 16711680,
+                                            "hue": 0,
+                                            "sat": 100,
+                                            "color_mode": 1,
+                                            "flowing": 0,
+                                            "delayoff": 0,
+                                            "music_on": 0,
+                                            "current_brightness": 50,
+                                            "rgbv": [255,0,0],
+                                            "sleep_timer": 1,
+                                            "scene":"romantic"
+                                        }
+                                     ]
+                    }
+            ]
+            }
+        ]
+      }
+
+]
+
+      

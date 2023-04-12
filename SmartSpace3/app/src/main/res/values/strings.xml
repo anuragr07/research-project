@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Smart Space</string>
+    <string name="username_hint">xyz123@whatever.com</string>
+    <string name="pass_hint">*********</string>
+    <string name="login_btn">Login</string>
+    <string name="signup_btn">Sign Up</string>
+    <string name="don_t_join_yet">Don\'t  join yet?</string>
+
+    <string name="desc">Create a new Account</string>
+    <string name="email">Email</string>
+    <string name="fname">Enter your First Name</string>
+    <string name="lname">Enter your Last Name</string>
+    <string name="or">or</string>
+    <string name="set_pass">Enter a Password</string>
+    <string name="confirm_pass">Confirm Password</string>
+    <string name="desc2">Already have an Account?</string>
+    <string name="cr_acc">Create Account</string>
+    <string name="rooms">Room 1</string>
+    <string name="save">SAVE</string>
+    <string name="log_out">Log Out</string>
+    <string name="contactUs">Contact Us</string>
+    <string name="btnF">The switch is on/off</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_bills">Bills</string>
+    <string name="menu_aboutus">About Us</string>
+    <string name="pic_change">Change Photo</string>
+    <string name="firstName">First Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="changePassword">CHANGE PASSWORD</string>
+    <string name="saveSettings">SAVE SETTINGS</string>
+    <string name="editEmail">Edit E-mail address</string>
+    <string name="phnNum">Phone Number</string>
+    <string name="email_add">E-mail Us</string>
+    <string name="_1_2368802636">+1 236-880-2636</string>
+    <string name="scandy_email">scandya19@gmail.com</string>
+    <string name="ask_your_query">Ask Your Query</string>
+    <string name="send_your_message">Send Your Message</string>
+    <string name="oldPass">Enter Old Password</string>
+    <string name="newPass">Enter a new Password</string>
+    <string name="newPass01">Confirm Password</string>
+    <string name="updatePass">Update Password</string>
+    <string name="phone_num">Phone Number</string>
+    <string-array name="conditions">
+        <item>It\'s recommended to use at least 8 characters.</item>
+        <item>A strong password should include a mix of uppercase and lowercase letters, numbers, and special characters such as !@#$%^&amp;*()_+.</item>
+        <item>Avoid using common dictionary words, phrases, or patterns.</item>
+    </string-array>
+    <string name="title_activity_json_test">jsonTest</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="API_URL">http://174.6.73.177:3000/</string>
+    <string name="title_activity_profile_controller">ProfileController</string>
+</resources>

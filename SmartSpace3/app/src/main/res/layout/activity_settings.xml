@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".Settings">
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:padding="10dp"
+            android:id="@+id/backsetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/baseline_arrow_back_24"
+            android:backgroundTint="@color/blueBlack"/>
+
+
+        <TextView
+            android:layout_width="279dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="-5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/backsetting"
+            android:gravity="start"
+            android:text="Settings"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_settings"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:id="@+id/Portal"
+        android:gravity="start"
+        android:text="Landlord Portal"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="10dp"
+        app:drawableEndCompat="@drawable/baseline_keyboard_arrow_right_24"
+        android:drawableStart="@drawable/baseline_camera_enhance_24" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+        android:background="@drawable/back_settings"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:gravity="start"
+        android:text="My Account"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="10dp"
+
+        android:drawableStart="@drawable/baseline_person_24" />
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userSettings"
+        android:layout_marginStart="24dp"
+        android:gravity="start"
+        android:text="abc@gmail.com"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:textSize="10dp"
+        android:paddingBottom="10dp"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="10dp"
+  />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/userSettingsId"
+            android:layout_marginStart="24dp"
+            android:gravity="start"
+            android:text="abc@gmail.com"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            android:paddingBottom="10dp"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/baseline_person_24"
+            android:drawablePadding="10dp"
+            android:gravity="start"
+            android:text="Logout"
+
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_toEndOf="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:gravity="start"
+        android:text="SMART INTEGRATIONS"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="7dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/txtContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="24dp"
+        android:gravity="start"
+        android:padding="10dp"
+        android:background="@drawable/back_settings"
+        android:text="Contact Us"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="1dp"
+        app:drawableEndCompat="@drawable/baseline_keyboard_arrow_right_24"
+        android:drawableStart="@drawable/baseline_app_shortcut_24" />
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

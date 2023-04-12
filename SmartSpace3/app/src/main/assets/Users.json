@@ -1,0 +1,38 @@
+
+[{
+  "user_id": 1001,
+  "first_name": "Arpie",
+  "last_name": "Grover",
+  "username": "ArpieGrover",
+  "email": "lshapland0@delicious.com",
+  "password": "1234"
+}, {
+  "user_id": 1002,
+  "first_name": "Anurag",
+  "last_name": "Rawal",
+  "username": "AnuragRawal",
+  "email": "spaffot1@facebook.com",
+  "password": "1234"
+}, {
+  "user_id": 1003,
+  "first_name": "Prince",
+  "last_name": "Sharma",
+  "username": "PrinceSharma",
+  "email": "gkoopman2@skype.com",
+  "password": "VyWzzL"
+}, {
+  "user_id": 1004,
+  "first_name": "Saksham",
+  "last_name": "Abrol",
+  "username": "SakshamAbrol",
+  "email": "lcoils3@amazonaws.com",
+  "password": "dVcSD3JCSB7"
+}, {
+  "user_id": 1005,
+  "first_name": "Stephen",
+  "last_name": "Chiong",
+  "username": "StephenChiong",
+  "email": "ddodsworth4@intel.com",
+  "password": "1234"
+}]
+
