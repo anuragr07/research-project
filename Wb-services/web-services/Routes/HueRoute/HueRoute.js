@@ -73,13 +73,34 @@ router.get('/allOff', (req, res) => {
 
 // Set Color Route -
 // this should set the brightness and color
-router.post('/setColor', (req, res) => {
+router.post('/bright/:name/:value', (req, res) => {
     // Script path
     const setColorScriptPath = scriptPath + 'hueColor.py';
+
+    const briPercent = req.params.value;
+    const lightName = req.params.name;
     
     // Script vars
-    const briVal = '255';
-    const lightId = '1';
+    const briVal = Math.round(percent / 100 * 255)
+    let lightId;
+
+    switch (lightName) {
+        case "Hue-Light-1":
+            lightId = 2;
+            
+            break;
+        case "Hue-Light-2":
+            lightId = 3;
+            
+            break;
+        case "Hue-Light-1":
+            lightId = 1;
+            
+            break;
+
+        default:
+            break;
+    }
 
     // arg 1 - Brightness value, arg 2 - light id
     // create list of vars
@@ -89,6 +110,7 @@ router.post('/setColor', (req, res) => {
     runScript(scriptVarsList)
     .then((response) => {
         // Send Response
+        res.setHeader('Content-Type', 'application/json')
         res.send(response)
     })
 })
