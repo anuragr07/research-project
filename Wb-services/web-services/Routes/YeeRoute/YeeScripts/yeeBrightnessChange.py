@@ -7,10 +7,12 @@ from yeelight import Bulb
 from yeelight import discover_bulbs
 from Yee_Attributes import YeeAttributes
 import sys
+import json
 
 number_of_yee_bulbs=discover_bulbs()
 
-ip_address=number_of_yee_bulbs[int(sys.argv[1])]["ip"]
+first_bulb=number_of_yee_bulbs[0]
+ip_address=first_bulb["ip"] 
 
 bulb = Bulb(ip_address, auto_on=True)
 attributes=YeeAttributes()
@@ -19,6 +21,10 @@ def changeBrightness(b):
     bulb.set_brightness(b)
 
 bulb.turn_on()
-changeBrightness(attributes.bright)
+changeBrightness(int(sys.argv[1]))
+
+
+json_object = json.dumps({"status": "Changed"})
+print(json_object)
 
 sys.stdout.flush()

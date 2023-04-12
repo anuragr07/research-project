@@ -11,7 +11,7 @@ router.get('/', (req, res) => {
     
 })
 
-router.get('/toggle', (req, res) => {
+router.post('/toggle/:user/:name', (req, res) => {
     // Script path
     const toggleScriptPath = scriptPath + 'yeeToggle.py'
 
@@ -48,13 +48,19 @@ router.get('/props/:name', (req, res) => {
   })
 })
 
-router.post('/setColor', (req, res) => {
+router.post('/color/:user/:name/:r/:g/:b', (req, res) => {
     // Script path
     const changeColorScriptPath = scriptPath + 'yeeColorChange.py'
     
+    const R = parseInt(req.params.r);
+    const G = parseInt(req.params.g);
+    const B = parseInt(req.params.b);
+
+    console.log(R);
+
     // Script vars
     // const lightId = req.params.id;
-    const rgbv = [255, 255, 0]
+    const rgbv = [R, G, B]
     
     // create list of vars
     let scriptVarsList = [changeColorScriptPath, rgbv]
@@ -63,17 +69,18 @@ router.post('/setColor', (req, res) => {
     runScript(scriptVarsList)
     .then((response) => {
         // Send Response
+        res.setHeader('Content-Type', 'application/json')
         res.send(response)
     })
 })
 
-router.post('/setBrightness', (req, res) => {
+router.post('/bright/:user/:name/:value', (req, res) => {
     // Script path
     const brightnessScriptPath = scriptPath + 'yeeBrightnessChange.py'
     
     // Script vars
     // const lightId = req.params.id;
-    const bright = [255, 255, 0]
+    const bright = req.params.value
     
     // create list of vars
     let scriptVarsList = [brightnessScriptPath, bright]
@@ -82,6 +89,7 @@ router.post('/setBrightness', (req, res) => {
     runScript(scriptVarsList)
     .then((response) => {
         // Send Response
+        res.setHeader('Content-Type', 'application/json')
         res.send(response)
     })
 })
