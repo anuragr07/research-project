@@ -136,21 +136,23 @@ router.post('on/:name', (req, res) => {
     // Script path
     const onScriptPath = scriptPath + 'hueOn.py'
 
+    res.send(onScriptPath)
+
     // Script vars
     let lightId;
 
     const lightName = req.params.name;
     
     switch (lightName) {
-        case "Hue-Light-1":
+        case "Hue Light-1":
             lightId = 2;
             
             break;
-        case "Hue-Light-2":
+        case "Hue Light-2":
             lightId = 3;
             
             break;
-        case "Hue-Light-1":
+        case "Hue Light-3":
             lightId = 1;
             
             break;
@@ -180,15 +182,15 @@ router.post('off/:name', (req, res) => {
     const lightName = req.params.name;
     
     switch (lightName) {
-        case "Hue-Light-1":
+        case "Hue Light-1":
             lightId = 2;
             
             break;
-        case "Hue-Light-2":
+        case "Hue Light-2":
             lightId = 3;
             
             break;
-        case "Hue-Light-1":
+        case "Hue Light-3":
             lightId = 1;
             
             break;
