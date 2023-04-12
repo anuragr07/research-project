@@ -1,5 +1,5 @@
 const LaundryTable = require("../Model/LaundryTable")
-
+const fetch = require('node-fetch')
 const API_IP = "174.6.73.177:3000"
 const LOCAL = "localhost:3000"
 
@@ -149,12 +149,9 @@ exports.turnOffLaundry = async (req, res) => {
         },
             function (err, table) {
                 if (err) return res.status(500).send({ mresponsesg: false });
-                res.status(200).send(table);
+                res.status(200).send(status);
             }
         )
-        console.log(config);
-        // Send status
-        // res.status(200).send(status)
         
         // Submit data on profile
     } catch (error) {

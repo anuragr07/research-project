@@ -77,6 +77,7 @@ router.get('/off/:plug', (req, res) => {
 router.get('/printLines', (req, res) => {
     // Script path
     const turnOffScriptPath = scriptPath + 'ShellyEnergy.py'
+    
 
     // Script vars
     // const lightId = req.params.id;
