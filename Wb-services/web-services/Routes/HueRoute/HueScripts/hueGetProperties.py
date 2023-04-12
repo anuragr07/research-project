@@ -87,6 +87,8 @@ try:
             }
         }
 
+        print(light.light_id)
+
         # props = props + "{name:" + light.name
         # props = props + ",status:" + str(light.on)
         # props = props + ",ip:" + bridge_ip

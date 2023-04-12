@@ -132,12 +132,32 @@ router.get('/toggle/:id', (req, res) => {
 })
 
 // Turn on one light
-router.post('on/:id', (req, res) => {
+router.post('on/:name', (req, res) => {
     // Script path
-    const onScriptPath = scriptPath + 'hueOne.py'
+    const onScriptPath = scriptPath + 'hueOn.py'
 
     // Script vars
-    const lightId = req.params.id;
+    let lightId;
+
+    const lightName = req.params.name;
+    
+    switch (lightName) {
+        case "Hue-Light-1":
+            lightId = 2;
+            
+            break;
+        case "Hue-Light-2":
+            lightId = 3;
+            
+            break;
+        case "Hue-Light-1":
+            lightId = 1;
+            
+            break;
+
+        default:
+            break;
+    }
 
     // create list of vars
     let scriptVarsList = [onScriptPath, lightId]
@@ -149,6 +169,45 @@ router.post('on/:id', (req, res) => {
         res.send(response)
     })
 })
+
+router.post('off/:name', (req, res) => {
+    // Script path
+    const onScriptPath = scriptPath + 'hueOff.py'
+
+    // Script vars
+    let lightId;
+
+    const lightName = req.params.name;
+    
+    switch (lightName) {
+        case "Hue-Light-1":
+            lightId = 2;
+            
+            break;
+        case "Hue-Light-2":
+            lightId = 3;
+            
+            break;
+        case "Hue-Light-1":
+            lightId = 1;
+            
+            break;
+
+        default:
+            break;
+    }
+
+    // create list of vars
+    let scriptVarsList = [onScriptPath, lightId]
+    
+    // Run script
+    runScript(scriptVarsList)
+    .then((response) => {
+        // Send Response
+        res.send(response)
+    })
+})
+
 
 // Run the python script
 function runScript(scriptParamsList) {

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:cardBackgroundColor="@color/black"
+        app:cardCornerRadius="3dp"
+        app:cardMaxElevation="8dp"
+        >
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_room"
+            android:orientation="vertical">
+
+
+            <ImageView
+
+                android:id="@+id/imageView2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/blueBlack"
+                app:srcCompat="@drawable/img2" />
+
+
+            <TextView
+
+                android:id="@+id/text_roomname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:text="@string/rooms"
+                android:textSize="20sp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:max="100"
+                android:minHeight="10dp"
+                android:maxHeight="10dp"
+                android:layout_below="@id/imageView2"
+                android:progressDrawable="@drawable/seek_bar"
+                android:progress="0"
+                android:secondaryProgress="0"
+                android:thumbOffset="0dp"
+                android:thumb="@drawable/sb_thumb" />
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:thumbTint="@drawable/switch_thumb_selector"
+                android:trackTint="@drawable/switch_track_selector"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

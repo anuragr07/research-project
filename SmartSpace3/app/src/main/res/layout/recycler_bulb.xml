@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:background="@drawable/back_scene"
+    android:orientation="vertical"
+
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo"
+        app:civ_border_color="#FFFFFF"
+        app:civ_border_width="2dp" />
+    <TextView
+        android:id="@+id/txtbulb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="2dp"
+        android:text="My Lights"
+        android:paddingBottom="10dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        />
+</androidx.appcompat.widget.LinearLayoutCompat>
