@@ -78,7 +78,7 @@ router.post('/setColor', (req, res) => {
     const setColorScriptPath = scriptPath + 'hueColor.py';
     
     // Script vars
-    const briVal = '100';
+    const briVal = '255';
     const lightId = '1';
 
     // arg 1 - Brightness value, arg 2 - light id
@@ -113,12 +113,31 @@ router.get('/toggle', (req, res) => {
 })
 
 // Toggle one lights
-router.get('/toggle/:id', (req, res) => {
+router.get('/toggle/:name', (req, res) => {
     // Script path
     const toggleScriptPath = scriptPath + 'hueToggle.py'
 
-    // Script vars
-    const lightId = req.params.id;
+    let lightId;
+
+    const lightName = req.params.name;
+    
+    switch (lightName) {
+        case "Hue Light-1":
+            lightId = 2;
+            
+            break;
+        case "Hue Light-2":
+            lightId = 3;
+            
+            break;
+        case "Hue Light-3":
+            lightId = 1;
+            
+            break;
+
+        default:
+            break;
+    }
 
     // create list of vars
     let scriptVarsList = [toggleScriptPath, lightId]
@@ -127,12 +146,13 @@ router.get('/toggle/:id', (req, res) => {
     runScript(scriptVarsList)
     .then((response) => {
         // Send Response
+        res.setHeader('Content-Type', 'application/json')
         res.send(response)
     })
 })
 
 // Turn on one light
-router.post('on/:name', (req, res) => {
+router.get('on', (req, res) => {
     // Script path
     const onScriptPath = scriptPath + 'hueOn.py'
 

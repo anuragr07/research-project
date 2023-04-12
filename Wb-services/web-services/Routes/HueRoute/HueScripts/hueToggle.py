@@ -7,6 +7,7 @@ import sys
 from phue import Bridge
 import os
 from dotenv import load_dotenv, find_dotenv
+import json
 
 load_dotenv(find_dotenv())
 
@@ -29,13 +30,15 @@ try:
     # If the bulb is on, turn it off
     if light_state['state']['on']:
         b.set_light(light_id, 'on', False)
-        print(f"Turned off the light")
+        json_object = json.dumps({ "status": "Off"})
+        print(json_object)
     # If the bulb is off, turn it on
     else:
         b.set_light(light_id, 'on', True)
-        print(f"Turned on the light")
+        json_object = json.dumps({ "status": "On"})
+        print(json_object)
 except Exception as e:
     # Handle the error here
-    print(f"Error occurred: {e}")
+    print("Error occurred:" + e)
 
 sys.stdout.flush()
