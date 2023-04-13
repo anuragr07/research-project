@@ -75,6 +75,8 @@ try:
         if light.on != True:
             status = "Off"
 
+        percentage = round((light.brightness / 255) * 100)
+
         # props of hue light
         props = {
             "device_id": getDeviceId(light.name),

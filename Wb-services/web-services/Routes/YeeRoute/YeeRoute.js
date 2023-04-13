@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
 const {spawn} = require('child_process')
-
+const Profile = require('../../Model/Profile')
 const scriptPath = 'Routes/YeeRoute/YeeScripts/';
 
 // --- Code to run the scripts ---
@@ -48,7 +48,8 @@ router.get('/props/:name', (req, res) => {
   })
 })
 
-router.post('/color/:user/:name/:r/:g/:b', (req, res) => {
+
+router.post('/color/:user/:name/:r/:g/:b', async (req, res) => {
     // Script path
     const changeColorScriptPath = scriptPath + 'yeeColorChange.py'
     
@@ -56,14 +57,18 @@ router.post('/color/:user/:name/:r/:g/:b', (req, res) => {
     const G = parseInt(req.params.g);
     const B = parseInt(req.params.b);
 
-    console.log(R);
+    const roomName = req.params.room;
+    const deviceName = req.params.name;
+    const userId = req.params.user;
 
+    
     // Script vars
     // const lightId = req.params.id;
     const rgbv = [R, G, B]
     
     // create list of vars
     let scriptVarsList = [changeColorScriptPath, rgbv]
+  
     
     // Run script
     runScript(scriptVarsList)
